@@ -1,0 +1,1141 @@
+* {
+    position: relative;
+}
+
+/*CSS for mask*/
+
+.mask {
+    background: -moz-linear-gradient(top, #111111, #111111);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #111111), color-stop(100%, #111111));
+    filter: progId:DXImageTransform.Microsoft.gradient(startColorStr='#111111', endColorStr='#111111', gradientType=0);
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+}
+
+/*Common CSS for all floated and cleared block level elements*/
+
+.floatedLeft {
+    float: left;
+}
+
+.floatedRight {
+    float: right;
+}
+
+.clearfixLeft:after,
+.clearfixRight:after,
+.clearfixBoth:after {
+    content: ".";
+    height: 0;
+    display: block;
+    visibility: hidden;
+}
+
+.clearedLeft,
+.clearfixLeft:after {
+    clear: left;
+}
+
+.clearedRight,
+.clearfixRight:after {
+    clear: right;
+}
+
+.clearedBoth,
+.clearfixBoth:after {
+    clear: both;
+}
+
+/*Common CSS to display/hide elements*/
+
+.displayBlock {
+    display: block !important;
+}
+
+.displayNone {
+    display: none !important;
+}
+
+.positionFixed {
+    position: fixed;
+}
+
+.positionAbsolute {
+    position: absolute;
+}
+
+.overflowHidden {
+    overflow: hidden;
+}
+
+/*CSS for <ul> of Iterator*/
+
+.iterator {
+    list-style-type: none;
+    /*margin: 0px !important;*/
+    /*padding: 0px !important;*/
+    /*top: 0px !important;*/
+    /*left: 0px !important;*/
+}
+
+/*CSS for Button and ButtonItem*/
+
+.button,
+.buttonItem {
+    color: #000000;
+    font-family: Tahoma, Verdana, Bitstream Vera Sans, sans-serif;
+    font-size: 12px;
+    border: 1px solid rgb(207, 210, 214);
+    border-radius: 2px;
+    background: -moz-linear-gradient(top, #fdfdfd, #e0e0e0);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fdfdfd), color-stop(100%, #e0e0e0));
+    filter: progId:DXImageTransform.Microsoft.gradient(startColorStr='#fdfdfd', endColorStr='#e0e0e0', gradientType=0);
+}
+
+.button:hover,
+.buttonItem:hover {
+    border-color: rgb(158, 181, 211);
+    background: -moz-linear-gradient(top, #f6fcfe, #daebfd);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f6fcfe), color-stop(100%, #daebfd));
+    filter: progId:DXImageTransform.Microsoft.gradient(startColorStr='#f6fcfe', endColorStr='#daebfd', gradientType=0);
+}
+
+/*
+    Classes for TreeS
+*/
+
+.tree {
+    border: 1px solid gray;
+}
+
+.treeHeader {
+    border-right: 1px solid #d3d3d3;
+    border-left: 1px solid white;
+    height: 100%;
+    float: left;
+    color: #333333;
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 11px;
+}
+
+.treeHeader:last-child {
+    height: 100%;
+    float: left;
+}
+
+.treeHeaderBg,
+.treeHeaderMain {
+    overflow: hidden;
+    background: -moz-linear-gradient(top, #FCFCFC, #e7e7e7);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FCFCFC), color-stop(100%, #e7e7e7));
+    filter: progId:DXImageTransform.Microsoft.gradient(startColorStr='#FCFCFC', endColorStr='#e7e7e7', gradientType=0);
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.treeHeaderBg:hover {
+    background: -moz-linear-gradient(top, #FCFCFC, #A3CDF6);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FCFCFC), color-stop(100%, #A3CDF6));
+    filter: progId:DXImageTransform.Microsoft.gradient(startColorStr='#FCFCFC', endColorStr='#A3CDF6', gradientType=0);
+}
+
+.treeCell {
+    z-index: 1;
+}
+
+.treeCellDark {}
+
+.treeCell td,
+.treeCellDark td {
+    border-bottom: 1px solid #f5f5f5;
+    color: #333333;
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 11px;
+    cursor: default;
+    background: url("images/transparent.png");
+}
+
+.treeCell:hover,
+.treeCellDark:hover {
+    background: -moz-linear-gradient(top, #f1f6fe, #bbd9f6);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f1f6fe), color-stop(100%, #bbd9f6));
+}
+
+/*for IE only*/
+
+.treeCellOver,
+.treeCellDarkOver {
+    filter: progId:DXImageTransform.Microsoft.gradient(startColorStr='#FCFCFC', endColorStr='#A3CDF6', gradientType=0);
+    color: #333333;
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 11px;
+}
+
+/*--------TABLES----------*/
+
+.table {
+    border: 1px solid gray;
+    /*border-top: 1px solid gray;*/
+}
+
+.tableHeader {
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid white;
+    height: 100%;
+    float: left;
+}
+
+.tableHeader:last-child {
+    height: 100%;
+    float: left;
+}
+
+.tableHeaderBg,
+.tableHeaderMain {
+    background: -moz-linear-gradient(top, #FCFCFC, #d9d5d5);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FCFCFC), color-stop(100%, #d9d5d5));
+    filter: progId:DXImageTransform.Microsoft.gradient(startColorStr='#FCFCFC', endColorStr='#d9d5d5', gradientType=0);
+    border-bottom: 1px solid gray;
+    overflow: hidden;
+}
+
+.tableHeaderBg:hover {
+    background: -moz-linear-gradient(top, #FCFCFC, #A3CDF6);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FCFCFC), color-stop(100%, #A3CDF6));
+    filter: progId:DXImageTransform.Microsoft.gradient(startColorStr='#FCFCFC', endColorStr='#A3CDF6', gradientType=0);
+}
+
+.tableCell {
+    background: #FEFEFE;
+}
+
+.tableCell td,
+.tableCellSelected td,
+.tableCellDarkSelected td,
+.tableCellDark td {
+    border-right: 1px solid gray;
+    border-left: 1px solid white;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid white;
+}
+
+.tableCellDark {
+    background: #F1F1F1;
+}
+
+.tableCell:hover,
+.tableCellOver,
+.tableCellDark:hover,
+.tableCellDarkOver {
+    background-image: url("images/transparent.png");
+    background: -moz-linear-gradient(top, #e0effb, #bbd9f6);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e0effb), color-stop(100%, #bbd9f6));
+    filter: progId:DXImageTransform.Microsoft.gradient(startColorStr='#e0effb', endColorStr='#bbd9f6', gradientType=0);
+}
+
+.tableCellSelected,
+.tableCellDarkSelected {
+    background: -moz-linear-gradient(top, #d9e4f6, #9FB7E9);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d9e4f6), color-stop(100%, #9FB7E9));
+    filter: progId:DXImageTransform.Microsoft.gradient(startColorStr='#d9e4f6', endColorStr='#9FB7E9', gradientType=0);
+    text-overflow: ellipsis;
+    color: #333333;
+}
+
+table.dataTable>thead>tr {
+    display: none !important;
+}
+
+/*--------TABLES  END----------*/
+
+/*--------COMBOS  START----------*/
+
+/*.comboUl {*/
+
+/*margin: 0;*/
+
+/*padding: 0;*/
+
+/*}*/
+
+.combo {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    clear: both;
+    height: 27px;
+    width: 100px;
+}
+
+.combo .comboPicker {
+    /*background-image: url(images/combo/comboBoxPicker.png); */
+    /*this image should of size 18X22 */
+}
+
+.comboOver .comboPicker {
+    /*background-image: url(images/combo/comboBoxPicker_Over.png); this image should of size 18X22 */
+}
+
+.combo:hover .comboText {
+    border: 1px dotted black !important;
+    border-right: none;
+}
+
+.combo .comboText,
+.comboText {
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 11px;
+    border: 1px solid #aaacb2;
+    border-right: none;
+    -moz-border-radius: 0 2px;
+    -webkit-border-radius: 0 2px;
+    -khtml-border-radius: 0 2px;
+}
+
+/*.combo select:focus{*/
+
+/*border: 1px solid #FF9900;*/
+
+/*background-color: blue;*/
+
+/*}*/
+
+.combo option {}
+
+.combo option:hover {}
+
+.comboBase {
+    /*
+        position:absolute;
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        overflow:hidden;
+        margin:0;
+        padding:0;
+        list-style-type:none;
+        border:1px solid black;
+    */
+    height: inherit;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    width: inherit;
+    z-index: 0;
+}
+
+.comboText {
+    height: inherit;
+    min-width: 20px;
+    float: left;
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 2px 20px 2px 2px;
+    background-color: white;
+}
+
+.comboPicker {
+    height: inherit;
+    width: 20px;
+    /*float: left;*/
+    position: absolute;
+    right: 0;
+}
+
+.comboOptionsList,
+.comboOptionsListActive {
+    /*width: 100%;*/
+    padding: 0;
+    list-style-type: none;
+    /*z-index: 20;*/
+    margin: 0;
+}
+
+.comboOptionsListActive {
+    display: block;
+}
+
+.comboOptionsListActive li:hover {
+    background-color: #0B70F9;
+}
+
+.hasCustomOptionsList {
+    display: none;
+}
+
+.selectedOptionsList {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+
+.customOptionsContainer {
+    border: 1px solid black;
+    display: none;
+    font-size: 12px;
+    /*position: absolute;*/
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: hidden !important;
+    background-color: white;
+}
+
+.customOptionsContainer:focus {
+    outline: none;
+}
+
+.customOptionsContainer li:hover {
+    background-color: #A3CDF6;
+}
+
+.customCheckImg {
+    background-image: url("../lwt/images/combo/tick.png");
+    display: inline-block;
+    height: 17px;
+    width: 17px;
+}
+
+.comboOption,
+.customOptionsSelected {
+    padding: 6px 23px 6px 5px;
+}
+
+.comboOption:focus,
+.customOptionsSelected:focus {
+    background-color: lightsteelblue;
+}
+
+.comboOption:hover:before,
+.customOptionsSelected:before,
+.comboOption:focus:before,
+.customOptionsSelected:focus:before {
+    background-image: url("../lwt/images/combo/tick.png");
+    content: "";
+    height: 17px;
+    right: 3px;
+    position: absolute;
+    top: 5px;
+    width: 17px;
+}
+
+.customOptionsSelected:hover:before,
+.customOptionsSelected:focus:before {
+    background-image: url("../lwt/images/combo/cross.png");
+    content: "";
+    height: 17px;
+    right: 3px;
+    position: absolute;
+    top: 5px;
+    width: 17px;
+}
+
+.comboHiddenInput {
+    display: none !important;
+    visibility: hidden;
+}
+
+.greedyMask {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    /*increase the z-index if there are other components in your application with a higher z-index value*/
+    overflow-y: auto;
+    background: rgba(255, 255, 255, 0);
+}
+
+.greedyMask * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.greedyMaskFixDiv {
+    height: 100px;
+    z-index: 2;
+    position: fixed;
+    background-color: #D3D3D3;
+    width: 98%;
+}
+
+.cloneZIndex {
+    z-index: 3 !important;
+}
+
+/*.step1-transition,.step2-transition, .step3-transition, .transitionends{*/
+
+/*-moz-transition-duration: 0.7s;*/
+
+/*-webkit-transition-duration: 0.7s;*/
+
+/*transition-duration: 0.7s;*/
+
+/*-moz-transition-timing-function: linear;*/
+
+/*-webkit-transition-timing-function: linear;*/
+
+/*transition-timing-function: linear;*/
+
+/*}*/
+
+.comboLiCloneStyle {
+    list-style-type: none;
+    font-size: 12px;
+    overflow: hidden;
+    background-color: lightsteelblue;
+    color: white;
+    z-index: 4;
+}
+
+.combo * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*--------COMBOS  END----------*/
+
+/*--------DATEFIELD  Start----------*/
+
+.datefield {}
+
+.datefield-div {
+    width: 17em;
+    padding: .2em .2em 0;
+    display: none;
+    border: 1px solid #dddddd;
+    background-image: url("images/transparent.png");
+    background: -moz-linear-gradient(top, #f8f8f8 10%, #eeeeee);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #f8f8f8), color-stop(100%, #eeeeee));
+    filter: progId:DXImageTransform.Microsoft.gradient(startColorStr='#f8f8f8', endColorStr='#eeeeee', gradientType=0);
+    color: #333333;
+    font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
+    font-size: 1.1em;
+}
+
+.datefield-div .datefield-header {
+    position: relative;
+    padding: .2em 0;
+    border: 1px solid #e78f08;
+    width: 100%;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background-image: url("images/transparent.png");
+    background: -moz-linear-gradient(top, #f7b64d 10%, #f7b64d);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #f7b64d), color-stop(100%, #f7b64d));
+    filter: progId:DXImageTransform.Microsoft.gradient(startColorStr='#f7b64d', endColorStr='#f7b64d', gradientType=0);
+}
+
+.datefield-div .datefield-prev,
+.datefield-div .datefield-next {
+    /*position: absolute;*/
+    top: 2px;
+    width: 1.8em;
+    height: 1.8em;
+}
+
+.datefield-div .datefield-prev {}
+
+.datefield-div .datefield-prev-hover,
+.datefield-div .datefield-next-hover {
+    border: none !important;
+}
+
+.datefield-next-icon,
+.datefield-prev-icon {
+    height: 14px;
+    width: 14px;
+    cursor: default;
+    margin-left: 2px;
+}
+
+.datefield-next-icon {
+    background-image: url(images/picker/next.png);
+}
+
+.datefield-prev-icon {
+    background-image: url(images/picker/previous.png);
+}
+
+.datefield-div .datefield-title {
+    margin: 0 2.3em;
+    line-height: 1.8em;
+    text-align: center;
+}
+
+.datefield-div table {
+    width: 100%;
+    font-size: .9em;
+    border-collapse: collapse;
+    margin: 0 0 .4em;
+}
+
+.datefield-div th {
+    padding: .7em .3em;
+    text-align: center;
+    font-weight: bold;
+    cursor: default;
+}
+
+.datefield-div td span,
+.datefield-div td a {
+    display: block;
+    padding: .2em;
+    text-align: center;
+    text-decoration: none;
+}
+
+.datefield-div .datefield-buttonpane {
+    background-image: none;
+    margin: .7em 0 0 0;
+    padding: 0 .2em;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+}
+
+.datefield-div .datefield-buttonpane button {
+    float: right;
+    margin: .5em .2em .4em;
+    cursor: pointer;
+    padding: .2em .6em .3em .6em;
+    width: auto;
+    overflow: visible;
+}
+
+.datefield-div .datefield-buttonpane button.datefield-current {
+    float: left;
+}
+
+.datefield-trigger {
+    position: relative !important;
+    left: 0px;
+    top: 0px;
+}
+
+/* IE6 IFRAME FIX (taken from datepicker 1.5.3 */
+
+.datepicker-cover {
+    display: none;
+    /*sorry for IE5*/
+    display/**/
+    : block;
+    /*sorry for IE5*/
+    position: absolute;
+    /*must have*/
+    z-index: -1;
+    /*must have*/
+    /*filter: mask(); */
+    /*must have*/
+    top: -4px;
+    /*must have*/
+    left: -4px;
+    /*must have*/
+    width: 200px;
+    /*must have*/
+    height: 200px;
+    /*must have*/
+}
+
+/*
+
+/*--------DATEFIELD  END----------*/
+
+/*--------NOTIFICATIONS START-------*/
+
+.notification-square,
+.notification-circle {
+    position: absolute !important;
+    height: 20px;
+    width: 20px;
+    top: 0;
+    color: white;
+    background-color: blue;
+    font-family: segoe;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.notification-circle {
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+}
+
+/*--------NOTIFICATIONS END-------*/
+
+/*--------TAB PANEL START-----------*/
+
+.tab {
+    border: 1px solid gray;
+    border-radius: 5px 5px 5px 5px;
+    height: 300px;
+    width: 500px;
+}
+
+.tab-links {
+    border-bottom: 1px solid gray;
+    list-style-type: none;
+    margin: 0 0 15px;
+    padding-left: 0;
+    padding-top: 10px;
+    background-color: silver;
+}
+
+.tab-links>li {
+    -moz-box-sizing: border-box;
+    display: inline-block;
+    margin: 10px 10px 0 2px;
+    position: relative;
+    z-index: 1;
+}
+
+.tab-links>li>a {
+    padding: 10px 10px 0;
+    cursor: pointer;
+}
+
+.tab-links>li>a.active {
+    border: 1px solid black;
+    border-radius: 4px 4px 0 0;
+    border-bottom-color: white;
+    background-color: #ffffff;
+    border-bottom-width: 2px;
+}
+
+.tab-content {
+    -moz-box-sizing: border-box;
+    height: 100%;
+    padding: 55px 10px 10px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.tab-content>div {
+    display: none;
+}
+
+.tab-content>div.active {
+    display: block;
+    height: 100%;
+    width: 100%;
+    -moz-box-sizing: border-box;
+    position: relative;
+}
+
+/*--------TAB PANEL END-------------*/
+
+/*----------SUGGESTION FIELD START--------------*/
+
+.suggestionField {
+    width: 500px;
+    height: auto;
+    border: 1px solid;
+    min-height: 25px;
+    display: inline-block;
+}
+
+.suggestionField-tagContainer {
+    /*display: none;*/
+    float: left;
+    height: auto;
+    width: auto;
+}
+
+.suggestionField-tagContainer div {
+    float: left;
+}
+
+.suggestionField-tagContainer>div {
+    border: 1px solid black;
+    margin: 3px 0 0 3px;
+    padding: 2px;
+}
+
+.suggestionField-tagContainer>div div {
+    height: 16px;
+    width: 16px;
+}
+
+.suggestionField-tagContainer>div div:first-child {
+    border-right: 1px solid black;
+    margin-right: 3px;
+    padding-right: 3px;
+}
+
+.suggestionField-input {
+    background: transparent;
+    width: 20px;
+    font-size: 12px;
+    max-width: 500px;
+    border: none;
+    float: left;
+    margin: 2px 0;
+    font-size: 18px;
+    padding-left: 2px;
+    outline: none;
+}
+
+.suggestionField-results {
+    display: none;
+}
+
+.suggestionField-list {
+    display: none;
+    position: absolute;
+    margin: 25px 0 0;
+    border-style: solid;
+    border-width: 0 1px 1px;
+    padding: 0;
+    width: inherit;
+    left: -1px !important;
+}
+
+.suggestionField-listItem {
+    display: none;
+    clear: both;
+    float: left;
+    padding: 7px;
+    width: 100%;
+    cursor: pointer;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.suggestionField-listItem:hover {
+    background-color: powderblue;
+}
+
+.suggestionField-listItemSelected {
+    background-color: #91C9E6;
+}
+
+.suggestionField-listItem:first-child {
+    display: none !important;
+}
+
+.closePointer {
+    cursor: pointer;
+}
+
+/*----------SUGGESTION FIELD END--------------*/
+
+/*-------------RADIO START------------------*/
+
+.radio,
+.radio-custom {
+    border: 1px solid black;
+    display: inline;
+    font-family: sans-serif;
+    font-size: 14px;
+    margin: 5px;
+    padding: 5px;
+    width: auto;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.radio-custom-label {
+    -moz-box-sizing: border-box;
+    margin: 2px;
+    padding: 2px 2px 2px 22px;
+}
+
+.radio-selector {
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-top: 0;
+    vertical-align: middle;
+}
+
+.radio-custom-selector {
+    display: none;
+}
+
+.radio-custom-selector:checked+.radio-custom-labelCustom {
+    background-color: powderblue;
+}
+
+.radio-custom-label:before,
+.radio-custom-selector:checked+.radio-custom-label:before {
+    content: "";
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: 1px;
+    width: 20px;
+}
+
+.radio-custom-label:before {
+    background: url("/images/pickers/radioSelector.png") repeat scroll 21px 22px transparent;
+}
+
+.radio-custom-selector:checked+.radio-custom-label:before {
+    background: url("/images/pickers/radioSelector.png") 45px 21px;
+}
+
+/*-------------RADIO END-------------------*/
+
+/*--------COMMON START----------*/
+
+.roundCorner {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.borderBox {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.state-default {
+    border: 1px solid #cccccc;
+    background-image: url("images/transparent.png");
+    background: -moz-linear-gradient(top, #f9f9f9 10%, #f8f8f8);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #f9f9f9), color-stop(100%, #f8f8f8));
+    filter: progId:DXImageTransform.Microsoft.gradient(startColorStr='#f9f9f9', endColorStr='#f8f8f8', gradientType=0);
+    font-weight: bold;
+    color: #1c94c4;
+}
+
+.state-hover,
+.state-active {
+    border: 1px solid #fbcb09;
+    background: -moz-linear-gradient(top, #fdf8dd 10%, #fdf8df);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #fdf8dd), color-stop(100%, #fdf8df));
+    filter: progId:DXImageTransform.Microsoft.gradient(startColorStr='#fdf8dd', endColorStr='#fdf8df', gradientType=0);
+    font-weight: bold;
+    color: #c77405;
+    overflow: hidden;
+}
+
+.state-active {
+    color: #333333 !important;
+}
+
+.state-disabled {
+    cursor: default !important;
+    opacity: .35;
+    filter: Alpha(Opacity=35);
+    background-image: none;
+}
+
+a.state-default,
+a.state-default:link,
+a.state-default:visited {
+    color: #1c94c4;
+    text-decoration: none;
+}
+
+.priority-primary {
+    font-weight: bold;
+    font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
+}
+
+.priority-secondary {
+    opacity: .7;
+    filter: Alpha(Opacity=70);
+    font-weight: normal;
+    font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
+}
+
+/*--------COMMON END----------*/
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.notShowVal {
+    display: none;
+}
+
+/* CSS TO BE ADDED AND MODIFIED BY USER FOR SCROLL-LlINK*/
+
+.scrollableContent {
+    margin: 0 auto;
+    position: relative;
+    width: 500px;
+}
+
+.scrollLinks>a,
+.scrollLinksSticky>a {
+    display: block;
+}
+
+.scrollLinks {
+    position: absolute;
+    top: 80px;
+    left: 0;
+}
+
+.scrollLinksSticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.scrollableContentWrapper {
+    height: 100%;
+    overflow: auto;
+    position: relative;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.activeScrollLink {
+    color: red;
+}
+
+.stickyHeader {
+    width: 100%;
+    height: 50px;
+    background-color: blue;
+}
+
+.resizeTextArea {
+    resize: none;
+    overflow: hidden;
+}
+
+.hiddenDiv {
+    display: none;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.common {
+    width: 500px;
+    min-height: 50px;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.lbr {
+    line-height: 3px;
+}
+
+/*-------------------CAROUSEL START---------------------------*/
+
+.carousel {
+    border: 1px solid steelblue;
+    height: 250px;
+    width: 400px;
+    padding-bottom: 50px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.carousel-wrapper {
+    border-bottom: 1px solid steelblue;
+    height: 100%;
+    width: 100%;
+}
+
+/*
+.carousel-arrow{
+    border: 1px solid rosybrown;
+    float: left;
+    height: 250px;
+    width: 100px;
+}
+*/
+
+.carousel-indicator {
+    border: 1px solid gray;
+    border-radius: 50% 50% 50% 50%;
+    float: left;
+    height: 10px;
+    margin: 10px 10px;
+    width: 10px;
+    cursor: pointer;
+}
+
+.carousel-window {
+    border: 1px solid steelblue;
+    float: left;
+    height: 100px;
+    overflow: hidden;
+    width: 100px;
+    margin-top: 50px;
+}
+
+.carousel-selectors {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    clear: both;
+    height: 50px;
+    margin-top: 0;
+    /*top: -38px;*/
+    width: 398px;
+}
+
+.indicator-active,
+.carousel-indicator-active {
+    background-color: gray;
+}
+
+.carousel-arrow {
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    float: left;
+    margin: 80px 5px;
+}
+
+.carousel-arrowLeft {
+    background: url("/images/pickers/pre_Disabled.png");
+}
+
+.carousel-arrowRight {
+    background: url("/images/pickers/next_Disabled.png");
+}
+
+.carousel-arrowLeft:active {
+    background: url("/images/pickers/pre.png") no-repeat;
+}
+
+.carousel-arrowRight:active {
+    background: url("/images/pickers/next.png") no-repeat;
+}
+
+.item,
+.carousel-item {
+    position: absolute;
+    left: 100px;
+    /*display: none;*/
+}
+
+.active,
+.carousel-active {
+    left: 0;
+    /*display: block;*/
+    /*opacity: 1 !important;*/
+}
+
+.carousel-content {
+    background-color: wheat;
+    height: 100%;
+    width: 100%;
+}
+
+/*------------------------CAROUSEL START------------------------*/

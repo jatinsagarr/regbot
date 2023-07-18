@@ -1,0 +1,6 @@
+{
+    "serviceUrl":"https://cumsdtu.in/LSARegistration",
+    "scheduleRequired":false,
+    "studentDetailsRequired": false,
+    "redirectUrl" : "https://cumsdtu.in/registration_student/login/login.jsp"
+}

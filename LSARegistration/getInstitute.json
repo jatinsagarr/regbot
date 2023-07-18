@@ -1,0 +1,23 @@
+{
+    "data": {
+        "instId": 1,
+        "shortName": "DTU",
+        "nameLine1": "Delhi Technological University",
+        "nameLine2": "Formerly Delhi College of Engineering",
+        "nameLine3": "Shahbad Daulatpur, Main Bawana Road, Delhi, 110042",
+        "contactPersonId": "Madhukar",
+        "phoneNo": "01127852203",
+        "faxNo": "",
+        "email": "erpsupport@dtu.ac.in",
+        "headName": null,
+        "headDesignation": "123",
+        "affiliationCode": "123",
+        "netAccessCode": "DTU",
+        "websiteUrl": "",
+        "aboutInstitute": null,
+        "logoUrl": null
+    },
+    "session": null,
+    "msgLst": null,
+    "error": false
+}
